@@ -29,7 +29,7 @@ namespace OpenIdDictSample
             return Task.CompletedTask;
         }
 
-        private async Task PopulateScopes(IServiceScope scope, CancellationToken cancellationToken)
+        private async ValueTask PopulateScopes(IServiceScope scope, CancellationToken cancellationToken)
         {
             var scopeManager = scope.ServiceProvider.GetRequiredService<IOpenIddictScopeManager>();
 
@@ -51,7 +51,7 @@ namespace OpenIdDictSample
             }
         }
 
-        private async Task PopulateInternalApps(IServiceScope scopeService, CancellationToken cancellationToken)
+        private async ValueTask PopulateInternalApps(IServiceScope scopeService, CancellationToken cancellationToken)
         {
             var appManager = scopeService.ServiceProvider.GetRequiredService<IOpenIddictApplicationManager>();
 

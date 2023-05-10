@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace OpenIdDictSample.Controllers
+namespace OpenIdDictSample.Server.Controllers
 {
     [ApiController]
     [Route("[controller]")]

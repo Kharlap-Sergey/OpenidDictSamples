@@ -6,7 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using OpenIddict.Abstractions;
 
-namespace OpenIdDictSample.Controllers
+namespace OpenIdDictSample.Server.Controllers
 {
     public class AuthorizationController : Controller
     {

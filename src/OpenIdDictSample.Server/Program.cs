@@ -1,7 +1,5 @@
-using System.Security.Cryptography.X509Certificates;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using OpenIdDictSample;
+using OpenIdDictSample.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OpenIddict.Abstractions;
 
-namespace OpenIdDictSample
+namespace OpenIdDictSample.Server
 {
     public class ClientSeeder : IHostedService
     {

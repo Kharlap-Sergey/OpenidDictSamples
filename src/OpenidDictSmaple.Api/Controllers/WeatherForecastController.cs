@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace OpenIdDictSample.Server.Controllers
+namespace OpenidDictSmaple.Api.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
@@ -29,12 +31,5 @@ namespace OpenIdDictSample.Server.Controllers
             })
             .ToArray();
         }
-    }
-
-    public class WeatherForecast
-    {
-        public DateTime Date { get; internal set; }
-        public int TemperatureC { get; internal set; }
-        public string Summary { get; internal set; }
     }
 }

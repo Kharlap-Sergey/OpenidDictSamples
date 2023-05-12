@@ -9,20 +9,12 @@
     }
   },
   "profiles": {
-    "OpenIdDictSample": {
+    "OpenIdDictSample.Server": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": ".well-known/openid-configuration",
       "applicationUrl": "https://localhost:7153;",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-    "IIS Express": {
-      "commandName": "IISExpress",
-      "launchBrowser": true,
-      "launchUrl": "weatherforecast",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

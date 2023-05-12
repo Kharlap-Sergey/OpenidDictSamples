@@ -17,7 +17,8 @@ namespace OpenIdDictSample.Server
         {
             using var scope = _serviceProvider.CreateScope();
 
-            var context = scope.ServiceProvider.GetRequiredService<DbContext>();
+            var databaseContext = scope.ServiceProvider.GetRequiredService<DbContext>();
+            databaseContext.Database.EnsureCreated();
 
             await PopulateScopes(scope, cancellationToken);
 
